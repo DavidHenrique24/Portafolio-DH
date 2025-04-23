@@ -21,6 +21,7 @@ export default function Home() {
           className="w-[600px] h-[400px] bg-cover bg-center flex flex-col items-center justify-center text-center px-4 rounded-lg shadow-lg"
           style={{ backgroundImage: "url('/img/cubo.png')" }}
         >
+          
           <h1 className="text-5xl font-bold">David Henrique</h1>
           <p className="mt-4 text-lg max-w-md">Este es un párrafo encima de un fondo que va de morado a negro.</p>
         </div>
