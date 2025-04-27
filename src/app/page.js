@@ -4,20 +4,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-purple-700 to-black text-white">
       
-      {/* Menu inicio */}
       <div className="flex flex-col items-center justify-center h-[10vh] text-center px-2">
         <ul className="menuInicio flex justify-center gap-20 list-none">
           <li><a href="#">Home</a></li>
-          <li>//</li>
+          <li>|</li>
           <li><a href="#">Acerca de mí</a></li>
-          <li>//</li>
+          <li>|</li>
           <li><a href="#">Experiencia</a></li>
-          <li>//</li>
+          <li>|</li>
           <li><a href="#">Proyectos</a></li>
         </ul>
       </div>
 
-      {/* Home */}
       <div className="flex justify-center items-center h-[80vh] relative">
         <div className="w-[1000px] h-[1000px] relative flex flex-col items-center justify-center text-center px-4 gap-8">
           <div
@@ -34,13 +32,10 @@ export default function Home() {
 
       <div className="separacion"></div>
 
-      {/* Acerca de mí */}
       <section className="flex flex-col items-center justify-center py-40 px-8">
         <div className="flex flex-col md:flex-row items-center gap-30">
           
-          {/* Contenedor de las imágenes */}
           <div className="relative w-100 h-100 group">
-            {/* Imagen normal */}
             <Image 
               src="https://preview.redd.it/mt8gf0gkmclc1.jpeg?auto=webp&s=a996aac416a181dc52c14be2c0f58a1d05ea8e6a" 
               alt="Foto de Perfil" 
@@ -48,7 +43,6 @@ export default function Home() {
               width={400}
               height={400}
             />
-            {/* Imagen al hacer hover */}
             <Image 
               src="https://i.ebayimg.com/images/g/yfwAAOSwBOBkQh-V/s-l1200.jpg" 
               alt="Foto Hover" 
@@ -58,7 +52,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Texto al lado */}
           <div className="text-center md:text-left">
             <h2 className="text-7xl font-bold mb-8">Acerca de mí</h2>
             <p className="text-2xl max-w-xl">
@@ -72,13 +65,11 @@ export default function Home() {
 
       <div className="separacion"></div>
 
-      {/* Experiencia */}
       <section className="flex flex-col items-center justify-center py-40 px-8 ">
         <div className="max-w-6xl w-full">
           <h2 className="text-8xl font-bold mb-20 text-center">Experiencia</h2>
           <div className="flex flex-col md:flex-row justify-center gap-12">
 
-            {/* GitHub */}
             <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300"> 
               <div className="flex flex-col items-center mb-4">
                 <Image 
@@ -96,7 +87,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Frontend Y Backend */}
             <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300">
               <div className="flex flex-col items-center mb-4">
                 <Image 
@@ -115,7 +105,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Proyectos Personales */}
             <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300"> 
               <div className="flex flex-col items-center mb-4">
                 <Image 
@@ -139,13 +128,11 @@ export default function Home() {
 
       <div className="separacion"></div>
 
-      {/* Proyectos */}
       <section className="py-50 px-8 ">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-8xl font-bold mb-20 text-center text-white">Proyectos</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
 
-            {/* Proyecto 1 */}
             <div className="group relative bg-blue-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
               <Image 
                 src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
@@ -156,7 +143,6 @@ export default function Home() {
               />
               <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 1</h3>
 
-              {/* Hover State */}
               <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="text-center px-6">
                   <p className="text-white text-lg mb-4">Un proyecto que utiliza React y otras tecnologías modernas.</p>
@@ -171,7 +157,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Proyecto 2 */}
             <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
               <Image 
                 src="https://i.pinimg.com/originals/7a/ff/43/7aff43acccf5297c98a4e5dfda6705e2.png" 
@@ -182,7 +167,6 @@ export default function Home() {
               />
               <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 2</h3>
 
-              {/* Hover State */}
               <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="text-center px-6">
                   <p className="text-white text-lg mb-4">Otro proyecto destacado que utiliza Node.js y Express.</p>
@@ -197,32 +181,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Proyecto 3 */}
-            <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-              <Image 
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" 
-                alt="Proyecto 3" 
-                className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
-                width={500}
-                height={200}
-              />
-              <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 3</h3>
 
-              {/* Hover State */}
-              <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                <div className="text-center px-6">
-                  <p className="text-white text-lg mb-4">Un proyecto interactivo hecho con React y Firebase.</p>
-                  <a 
-                    href="https://github.com/daw2-cognom25" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-white text-lg font-bold py-2 px-6 bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-400 transition-all duration-300"
-                  >
-                    Ver Proyecto
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
