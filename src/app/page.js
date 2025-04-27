@@ -1,3 +1,5 @@
+
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-purple-900 to-black text-white">
@@ -293,14 +295,36 @@ export default function Home() {
 </section>
 
 
+{/* Footer */}
+<footer className="text-white py-50 px-8 flex flex-col items-center gap-8">
+  
+  {/* Título */}
+  <h2 className="text-5xl font-bold text-center">Contáctame</h2>
 
+  {/* Iconos de redes */}
+  <div className="flex gap-8">
 
+    <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" className="w-12 h-12" />
+    </a>
+ 
+    <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-12 h-12" />
+    </a>
+    {/* Instagram */}
+    <a href="https://instagram.com/tuusuario" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" className="w-12 h-12" />
+    </a>
+    {/* Correo */}
+    <a href="mailto:tuemail@example.com" className="hover:scale-125 transition-transform duration-300">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" className="w-12 h-12" />
+    </a>
+  </div>
 
-
-
-
-
+</footer>
 
     </main>
+    
+    
   );
 }
