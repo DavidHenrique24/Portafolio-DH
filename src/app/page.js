@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-purple-700 to-black text-white">
@@ -39,16 +41,20 @@ export default function Home() {
           {/* Contenedor de las imágenes */}
           <div className="relative w-100 h-100 group">
             {/* Imagen normal */}
-            <img 
+            <Image 
               src="https://preview.redd.it/mt8gf0gkmclc1.jpeg?auto=webp&s=a996aac416a181dc52c14be2c0f58a1d05ea8e6a" 
               alt="Foto de Perfil" 
               className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 transition duration-500 group-hover:opacity-0"
+              width={400}
+              height={400}
             />
             {/* Imagen al hacer hover */}
-            <img 
+            <Image 
               src="https://i.ebayimg.com/images/g/yfwAAOSwBOBkQh-V/s-l1200.jpg" 
               alt="Foto Hover" 
               className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
+              width={400}
+              height={400}
             />
           </div>
 
@@ -75,10 +81,12 @@ export default function Home() {
             {/* GitHub */}
             <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300"> 
               <div className="flex flex-col items-center mb-4">
-                <img 
+                <Image 
                   src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
                   alt="GitHub Logo" 
                   className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
+                  width={64}
+                  height={64}
                 />
                 <h3 className="text-3xl font-semibold">GitHub</h3>
               </div>
@@ -91,10 +99,12 @@ export default function Home() {
             {/* Frontend Y Backend */}
             <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300">
               <div className="flex flex-col items-center mb-4">
-                <img 
+                <Image 
                   src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
                   alt="Frontend Logo" 
                   className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
+                  width={64}
+                  height={64}
                 />
                 <h3 className="text-3xl font-semibold">Frontend Y Backend</h3>
               </div>
@@ -108,10 +118,12 @@ export default function Home() {
             {/* Proyectos Personales */}
             <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300"> 
               <div className="flex flex-col items-center mb-4">
-                <img 
+                <Image 
                   src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
                   alt="Proyectos Personales Logo" 
                   className="w-20 h-20 mb-4 transition-transform duration-300 transform hover:scale-125" 
+                  width={80}
+                  height={80}
                 />
                 <h3 className="text-3xl font-semibold">Proyectos Personales</h3>
               </div>
@@ -135,10 +147,12 @@ export default function Home() {
 
             {/* Proyecto 1 */}
             <div className="group relative bg-blue-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-              <img 
+              <Image 
                 src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
                 alt="Proyecto 1" 
                 className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
+                width={500}
+                height={200}
               />
               <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 1</h3>
 
@@ -159,17 +173,19 @@ export default function Home() {
             </div>
             {/* Proyecto 2 */}
             <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
+              <Image 
+                src="https://i.pinimg.com/originals/7a/ff/43/7aff43acccf5297c98a4e5dfda6705e2.png" 
                 alt="Proyecto 2" 
                 className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
+                width={500}
+                height={200}
               />
               <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 2</h3>
 
               {/* Hover State */}
               <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="text-center px-6">
-                  <p className="text-white text-lg mb-4">Un proyecto de desarrollo Frontend con Bootstrap.</p>
+                  <p className="text-white text-lg mb-4">Otro proyecto destacado que utiliza Node.js y Express.</p>
                   <a 
                     href="https://github.com/daw2-cognom25" 
                     target="_blank" 
@@ -181,20 +197,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             {/* Proyecto 3 */}
             <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Node.js_logo.svg" 
+              <Image 
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" 
                 alt="Proyecto 3" 
                 className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
+                width={500}
+                height={200}
               />
               <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 3</h3>
 
               {/* Hover State */}
               <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="text-center px-6">
-                  <p className="text-white text-lg mb-4">Un proyecto Backend utilizando Node.js.</p>
+                  <p className="text-white text-lg mb-4">Un proyecto interactivo hecho con React y Firebase.</p>
                   <a 
                     href="https://github.com/daw2-cognom25" 
                     target="_blank" 
@@ -206,7 +223,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
