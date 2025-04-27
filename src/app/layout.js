@@ -1,5 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import 'font-awesome/css/font-awesome.min.css';
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
