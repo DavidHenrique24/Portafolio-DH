@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-900 to-black text-white">
+    <main className="min-h-screen bg-gradient-to-b from-purple-700 to-black text-white">
       
       {/* Menu inicio */}
       <div className="flex flex-col items-center justify-center h-[10vh] text-center px-2">
@@ -48,7 +48,7 @@ export default function Home() {
       />
       {/* Imagen al hacer hover */}
       <img 
-        src="https://i.pinimg.com/736x/8f/66/56/8f665620f0bbd3f7c9935ad5602e2f84.jpg" 
+        src="https://i.ebayimg.com/images/g/yfwAAOSwBOBkQh-V/s-l1200.jpg" 
         alt="Foto Hover" 
         className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
       />
@@ -135,7 +135,7 @@ export default function Home() {
   {/* Proyectos */}
 
 
-  <section className="py-50 px-8 bg-purple-950">
+  <section className="py-50 px-8 ">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-8xl font-bold mb-20 text-center text-white">Proyectos</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -294,34 +294,28 @@ export default function Home() {
   </div>
 </section>
 
-
-{/* Footer */}
-<footer className="text-white py-50 px-8 flex flex-col items-center gap-8">
-  
-  {/* Título */}
-  <h2 className="text-5xl font-bold text-center">Contáctame</h2>
-
-  {/* Iconos de redes */}
-  <div className="flex gap-8">
-
-    <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
-      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" className="w-12 h-12" />
-    </a>
- 
-    <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-12 h-12" />
-    </a>
-    {/* Instagram */}
-    <a href="https://instagram.com/tuusuario" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" className="w-12 h-12" />
-    </a>
-    {/* Correo */}
-    <a href="mailto:tuemail@example.com" className="hover:scale-125 transition-transform duration-300">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" className="w-12 h-12" />
-    </a>
+<footer className="text-white py-50 px-8 flex flex-col items-center gap-8 bg-gradient-to-b from-purple-700 to-purple">
+  <div className="flex flex-col items-center gap-8 relative z-10">
+    {/* Título */}
+    <h2 className="text-5xl font-bold text-center">Contáctame</h2>
+    {/* Iconos de redes */}
+    <div className="flex gap-8">
+      <a href="" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
+        <img src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="GitHub" className="w-10 h-10" />
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
+        <img src="https://img.icons8.com/ios11/512/FFFFFF/linkedin.png" alt="LinkedIn" className="w-10 h-10" />
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
+        <img src="https://img.icons8.com/m_outlined/512/FFFFFF/instagram-new.png" alt="Instagram" className="w-10 h-10" />
+      </a>
+      <a href="" className="hover:scale-125 transition-transform duration-300">
+        <img src="https://img.icons8.com/win10/512/FFFFFF/gmail.png" alt="Email" className="w-10 h-10" />
+      </a>
+    </div>
   </div>
-
 </footer>
+
 
     </main>
     
