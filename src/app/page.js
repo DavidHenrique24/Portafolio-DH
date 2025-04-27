@@ -6,11 +6,11 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center h-[10vh] text-center px-2">
         <ul className="menuInicio flex justify-center gap-20 list-none">
           <li><a href="#">Home</a></li>
-          <li>//</li>
+      
           <li><a href="#">Acerca de mí</a></li>
-          <li>//</li>
+       
           <li><a href="#">Experiencia</a></li>
-          <li>//</li>
+       
           <li><a href="#">Proyectos</a></li>
         </ul>
       </div>
