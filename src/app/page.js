@@ -1,17 +1,17 @@
 export default function Home() { 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-700 to-black text-white">
+    <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white">
       
    
       <div className="flex flex-col items-center justify-center h-[10vh] text-center px-2">
-        <ul className="menuInicio flex justify-center gap-20 list-none">
-          <li><a href="#">Home</a></li>
+        <ul className="menuInicio flex justify-center gap-50 ">
+          <li className="text-2xl"><a href="#">Home</a></li>
       
-          <li><a href="#">Acerca de mí</a></li>
+          <li className="text-2xl"><a href="#">Acerca de mí</a></li>
        
-          <li><a href="#">Experiencia</a></li>
+          <li className="text-2xl"><a href="#">Experiencia</a></li>
        
-          <li><a href="#">Proyectos</a></li>
+          <li className="text-2xl"><a href="#">Proyectos</a></li>
         </ul>
       </div>
 
@@ -294,9 +294,6 @@ export default function Home() {
       </a>
       <a href="" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/ios11/512/FFFFFF/linkedin.png" alt="LinkedIn" className="w-10 h-10" />
-      </a>
-      <a href="" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
-        <img src="https://img.icons8.com/m_outlined/512/FFFFFF/instagram-new.png" alt="Instagram" className="w-10 h-10" />
       </a>
       <a href="" className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/win10/512/FFFFFF/gmail.png" alt="Email" className="w-10 h-10" />
