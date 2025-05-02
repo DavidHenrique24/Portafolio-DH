@@ -39,20 +39,20 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white">
       
     
-      <div className="flex flex-col items-center justify-center h-[10vh] text-center px-2">
-        <ul className="menuInicio flex justify-center gap-50 ">
-          <li className="text-2xl animado"><a href="#">Home</a></li>
-      
-          <li className="text-2xl animado"><a href="#">Acerca de mí</a></li>
-       
-          <li className="text-2xl animado"><a href="#">Experiencia</a></li>
-       
-          <li className="text-2xl animado"><a href="#">Proyectos</a></li>
-        </ul>
-      </div>
+      <div className="fixed top-0 w-full z-50 flex flex-col items-center justify-center h-[10vh] text-center px-2 bg-black-opacity-80 backdrop-blur-sm">
+  <ul className="menuInicio flex justify-center gap-50">
+    <li className="text-2xl animado"><a href="#home">Home</a></li>
+    <li className="text-2xl animado"><a href="#acerca">Acerca de mí</a></li>
+    <li className="text-2xl animado"><a href="#exp">Experiencia</a></li>
+    <li className="text-2xl animado"><a href="#proyectos">Proyectos</a></li>
+  </ul>
+</div>
+
+
+
 
  
-      <div className="flex justify-center items-center h-[80vh] relative">
+      <div id="home" className="flex justify-center items-center h-[100vh] relative">
         <div className="w-[1000px] h-[1000px] relative flex flex-col items-center justify-center text-center px-4 gap-8">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg "
@@ -65,11 +65,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
+      <div id="acerca" className="separacion"></div>
 
-      <div className="separacion"></div>
 
 
-<section className="flex flex-col items-center justify-center  px-8">
+<section  className="flex flex-col items-center justify-center  px-8">
   <div className="flex flex-col md:flex-row items-center gap-30">
     
     
@@ -83,18 +84,20 @@ export default function Home() {
  
       <img 
         src="https://i.ebayimg.com/images/g/yfwAAOSwBOBkQh-V/s-l1200.jpg" 
-        alt="Foto Hover" 
+        alt="Foto Dibujo Hover" 
         className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
       />
     </div>
 
- 
+
+    <div >
     <div className="text-center md:text-left">
-      <h2 className="text-7xl font-bold mb-8 animado">Acerca de mí</h2>
+      <h2 className="text-7xl font-bold mb-8 animado ">Acerca de mí</h2>
       <p className="text-2xl max-w-xl">
         Soy David Henrique, un programador Web con experiencia en Frontend y Backend.
         Me gusta mucho todo lo relacionado a diseño, me gusta dibujar y jugar videojuegos en mis tiempos libres.
       </p>
+    </div>
     </div>
 
   </div>
@@ -103,8 +106,9 @@ export default function Home() {
 
    
 
-    <section className="flex flex-col items-center justify-center py-100 px-8 ">
-  <div className="max-w-6xl w-full">
+    <section id="exp" className="flex flex-col items-center justify-center py-100 px-8 ">
+
+  <div  className="max-w-6xl w-full">
     <h2 className="text-8xl font-bold mb-20 text-center animado">Experiencia</h2>
     <div className="flex flex-col md:flex-row justify-center gap-12">
 
@@ -161,7 +165,7 @@ export default function Home() {
   </div>
 </section>
 
-      <section
+      <section id="proyectos"
   className="py-50 px-8 "
 >
   <div className="max-w-6xl mx-auto">
@@ -319,26 +323,36 @@ export default function Home() {
   </div>
 </section>
 
-<footer className="text-white py-50 flex flex-col items-center ">
-  <div className="flex flex-col items-center gap-8 relative z-10">
+<div className="w-full border-t border-white opacity-50 my-5"></div>
 
-    <h2 className="text-5xl font-bold text-center">Contáctame</h2>
+<footer className="text-white py-16 flex flex-col items-center relative overflow-hidden">
+  <div className="flex flex-col items-center gap-8 z-10 relative">
+
+    <h2 className="text-4xl md:text-5xl font-bold text-center">Contáctame</h2>
 
     <div className="flex gap-8">
-      <a href="" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
+      <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+         className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="GitHub" className="w-10 h-10" />
       </a>
-      <a href="" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-transform duration-300">
+      <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+         className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/ios11/512/FFFFFF/linkedin.png" alt="LinkedIn" className="w-10 h-10" />
       </a>
-      <a href="" className="hover:scale-125 transition-transform duration-300">
+      <a href="mailto:tuemail@ejemplo.com" aria-label="Email"
+         className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/win10/512/FFFFFF/gmail.png" alt="Email" className="w-10 h-10" />
       </a>
     </div>
-    <img src="/img/Y8HD.gif" alt="GitHub" className="w-30 h-20 opacity-5" />
+
   </div>
+  <div className="mt-8 text-center z-10 relative">
+    <p className="text-lg">Espero vernos pronto!</p>
+  </div>
+  <img src="/img/Y8HD.gif" alt="GitHub" className="w-30 h-20 opacity-5 mt-3" />
 </footer>
-    </main>
+
+</main>
     
     
   );
