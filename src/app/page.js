@@ -1,17 +1,53 @@
-export default function Home() { 
+"use client";
+
+import { useEffect } from "react";
+
+export default function Home() {
+  useEffect(() => {
+    const elementos = document.querySelectorAll(".animado, .animadoArriba, .animadoIzquierda, .animadoDerecha");
+  
+    const opciones = {
+      root: null, // Observa respecto al viewport
+      rootMargin: "0px",
+      threshold: 0.1, // El 10% del elemento visible
+    };
+  
+    const callback = (entradas, observador) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add("visible");
+          observador.unobserve(entrada.target); // Deja de observar el elemento después de animarlo
+        }
+      });
+    };
+  
+    const observer = new IntersectionObserver(callback, opciones);
+  
+    // Observa todos los elementos seleccionados
+    elementos.forEach((elemento) => {
+      observer.observe(elemento);
+    });
+  
+    // Cleanup para evitar fugas de memoria
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+  
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white">
       
-   
+    
       <div className="flex flex-col items-center justify-center h-[10vh] text-center px-2">
         <ul className="menuInicio flex justify-center gap-50 ">
-          <li className="text-2xl"><a href="#">Home</a></li>
+          <li className="text-2xl animado"><a href="#">Home</a></li>
       
-          <li className="text-2xl"><a href="#">Acerca de mí</a></li>
+          <li className="text-2xl animado"><a href="#">Acerca de mí</a></li>
        
-          <li className="text-2xl"><a href="#">Experiencia</a></li>
+          <li className="text-2xl animado"><a href="#">Experiencia</a></li>
        
-          <li className="text-2xl"><a href="#">Proyectos</a></li>
+          <li className="text-2xl animado"><a href="#">Proyectos</a></li>
         </ul>
       </div>
 
@@ -19,13 +55,13 @@ export default function Home() {
       <div className="flex justify-center items-center h-[80vh] relative">
         <div className="w-[1000px] h-[1000px] relative flex flex-col items-center justify-center text-center px-4 gap-8">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg"
+            className="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg "
             style={{ backgroundImage: "url('/img/cubo.png')" }}
           ></div>
 
           <div className="relative z-10 flex flex-col items-center gap-8">
-            <h1 className="text-9xl font-bold">David Henrique</h1>
-            <p className="text-2xl max-w-md">Programador de Frontend y Backend, con muchas ganas de seguir aprendiendo.</p>
+            <h1 className="text-9xl font-bold animado ">David Henrique</h1>
+            <p className="text-2xl max-w-md animadoArriba">Programador de Frontend y Backend, con muchas ganas de seguir aprendiendo.</p>
           </div>
         </div>
       </div>
@@ -33,7 +69,7 @@ export default function Home() {
       <div className="separacion"></div>
 
 
-<section className="flex flex-col items-center justify-center py-40 px-8">
+<section className="flex flex-col items-center justify-center  px-8">
   <div className="flex flex-col md:flex-row items-center gap-30">
     
     
@@ -54,7 +90,7 @@ export default function Home() {
 
  
     <div className="text-center md:text-left">
-      <h2 className="text-7xl font-bold mb-8">Acerca de mí</h2>
+      <h2 className="text-7xl font-bold mb-8 animado">Acerca de mí</h2>
       <p className="text-2xl max-w-xl">
         Soy David Henrique, un programador Web con experiencia en Frontend y Backend.
         Me gusta mucho todo lo relacionado a diseño, me gusta dibujar y jugar videojuegos en mis tiempos libres.
@@ -65,16 +101,16 @@ export default function Home() {
 </section>
 
 
-      <div className="separacion"></div>
+   
 
-    <section className="flex flex-col items-center justify-center py-40 px-8 ">
+    <section className="flex flex-col items-center justify-center py-100 px-8 ">
   <div className="max-w-6xl w-full">
-    <h2 className="text-8xl font-bold mb-20 text-center">Experiencia</h2>
+    <h2 className="text-8xl font-bold mb-20 text-center animado">Experiencia</h2>
     <div className="flex flex-col md:flex-row justify-center gap-12">
 
   
-      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300"> 
-        <div className="flex flex-col items-center mb-4">
+      <div className=" bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoIzquierda"> 
+        <div className="flex flex-col items-center mb-4 ">
           <img 
             src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
             alt="GitHub Logo" 
@@ -89,7 +125,7 @@ export default function Home() {
       </div>
 
     
-      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300">
+      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoArriba">
         <div className="flex flex-col items-center mb-4">
           <img 
             src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
@@ -106,7 +142,7 @@ export default function Home() {
       </div>
 
 
-      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300"> 
+      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoDerecha"> 
         <div className="flex flex-col items-center mb-4">
           <img 
             src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
@@ -125,11 +161,11 @@ export default function Home() {
   </div>
 </section>
 
-      <div className="separacion"></div>
-
-  <section className="py-50 px-8 ">
+      <section
+  className="py-50 px-8 "
+>
   <div className="max-w-6xl mx-auto">
-    <h2 className="text-8xl font-bold mb-20 text-center text-white">Proyectos</h2>
+    <h2 className="text-8xl font-bold mb-20 text-center text-white animado">Proyectos</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
 
   
@@ -283,7 +319,7 @@ export default function Home() {
   </div>
 </section>
 
-<footer className="text-white py-50 px-8 flex flex-col items-center gap-8 bg-gradient-to-p from-purple-700 to-pruple">
+<footer className="text-white py-50 flex flex-col items-center ">
   <div className="flex flex-col items-center gap-8 relative z-10">
 
     <h2 className="text-5xl font-bold text-center">Contáctame</h2>
@@ -299,10 +335,9 @@ export default function Home() {
         <img src="https://img.icons8.com/win10/512/FFFFFF/gmail.png" alt="Email" className="w-10 h-10" />
       </a>
     </div>
+    <img src="/img/Y8HD.gif" alt="GitHub" className="w-30 h-20 opacity-5" />
   </div>
 </footer>
-
-
     </main>
     
     

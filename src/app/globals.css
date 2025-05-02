@@ -16,3 +16,52 @@ body {
 }
 
 
+.animado {
+  color: white;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Clase aplicada cuando el elemento entra en pantalla */
+.animado.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ANIMACIÓN DESDE ABAJO */
+@keyframes slideInUp {
+  0% { opacity: 0; transform: translateY(100px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animadoArriba.visible {
+  animation: slideInUp 2s ease-out forwards;
+}
+
+/* ANIMACIÓN DESDE LA IZQUIERDA */
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-100px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.animadoIzquierda.visible {
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+/* ANIMACIÓN DESDE LA DERECHA */
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(100px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.animadoDerecha.visible {
+  animation: slideInRight 2s ease-out forwards;
+}
+
+/* ANIMACIÓN BÁSICA (DESVANECER) */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.animado.visible {
+  animation: fadeIn 2s ease-out forwards;
+}
