@@ -74,20 +74,19 @@ export default function Home() {
   <div className="flex flex-col md:flex-row items-center gap-30">
     
     
-    <div className="relative w-100 h-100 group">
- 
-      <img 
-        src="https://preview.redd.it/mt8gf0gkmclc1.jpeg?auto=webp&s=a996aac416a181dc52c14be2c0f58a1d05ea8e6a" 
-        alt="Foto de Perfil" 
-        className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 transition duration-500 group-hover:opacity-0"
-      />
- 
-      <img 
-        src="https://i.ebayimg.com/images/g/yfwAAOSwBOBkQh-V/s-l1200.jpg" 
-        alt="Foto Dibujo Hover" 
-        className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
-      />
-    </div>
+   <div className="relative w-140 h-140 group">
+  <img 
+    src="/img/yo.png"
+    alt="Foto de Perfil" 
+    className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 transition duration-500 group-hover:opacity-0"
+  />
+
+  <img 
+    src="/img/foto animada.png" 
+    alt="Foto Dibujo Hover" 
+    className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
+  />
+</div>
 
 
     <div >
@@ -173,20 +172,16 @@ export default function Home() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
 
   
-      <div className="group relative bg-blue-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-        <img 
-          src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
-          alt="Proyecto 1" 
-          className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
-        />
-        <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 1</h3>
-
+      <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: "url('https://m.media-amazon.com/images/I/61M3rDwh4qL._h1_.png')" }}>
+       
+  
   
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
-            <p className="text-white text-lg mb-4">Un proyecto que utiliza React y otras tecnologías modernas.</p>
+            <p className="text-white text-lg mb-4">Un proyecto de Tetris hecho con React y JavaScript </p>
             <a 
-              href="https://github.com/daw2-cognom25" 
+              href="https://tetris-proyecto.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white text-lg font-bold py-2 px-6 bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-400 transition-all duration-300"
