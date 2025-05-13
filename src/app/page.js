@@ -66,30 +66,29 @@ export default function Home() {
         </div>
       </div>
       
-      <div id="acerca" className="separacion"></div>
 
+      <div className="separacion"></div>
 
-
-<section  className="flex flex-col items-center justify-center  px-8">
+<section id="acerca" className="flex flex-col items-center justify-center  px-8">
   <div className="flex flex-col md:flex-row items-center gap-30">
     
     
    <div className="relative w-140 h-140 group">
   <img 
-    src="/img/yo.png"
+    src="/img/PXL_20250513_221219442.jpg"
     alt="Foto de Perfil" 
     className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 transition duration-500 group-hover:opacity-0"
   />
 
   <img 
-    src="/img/foto animada.png" 
+    src="/img/yo.JPG" 
     alt="Foto Dibujo Hover" 
     className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
   />
 </div>
 
 
-    <div >
+    <div   >
     <div className="text-center md:text-left">
       <h2 className="text-7xl font-bold mb-8 animado ">Acerca de mí</h2>
       <p className="text-2xl max-w-xl">
@@ -138,8 +137,8 @@ export default function Home() {
           <h3 className="text-3xl font-semibold">Frontend Y Backend</h3>
         </div>
         <p className="text-xl">
-          Experiencia en el desarrollo de aplicaciones web utilizando tecnologías como React, Next.js, Node.js y Express.
-          Conocimientos en HTML, CSS y JavaScript. 
+          Experiencia en el desarrollo de aplicaciones web utilizando tecnologías como React y Next.js.
+          Conocimientos en HTML, CSS, PHP, TypeScript y JavaScript. 
           Desarrollo de aplicaciones web responsivas y optimizadas para diferentes dispositivos.
         </p>
       </div>
@@ -156,7 +155,7 @@ export default function Home() {
         </div>
         <p className="text-xl">
           Desarrollo de proyectos propios publicados en GitHub con tecnologías como PHP, TypeScript y JavaScript.
-          Integración de tecnologías como Git, y despliegues en Vercel.
+          Integración de tecnologías como Git, y despliegues en Vercel y Railway.
         </p>
       </div>
 
@@ -164,150 +163,102 @@ export default function Home() {
   </div>
 </section>
 
-      <section id="proyectos"
-  className="py-50 px-8 "
->
+  <section id="proyectos" className="py-20 px-8">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-8xl font-bold mb-20 text-center text-white animado">Proyectos</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
 
-  
-      <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url('https://m.media-amazon.com/images/I/61M3rDwh4qL._h1_.png')" }}>
-       
-  
-  
+      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg  text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+        style={{ backgroundImage: "url('https://m.media-amazon.com/images/I/61M3rDwh4qL._h1_.png')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
-            <p className="text-white text-lg mb-4">Un proyecto de Tetris hecho con React y JavaScript </p>
-            <a 
-              href="https://tetris-proyecto.vercel.app/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white text-lg font-bold py-2 px-6 bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-400 transition-all duration-300"
-            >
+            <h4 className="text-white text-3xl font-bold mb-6 tracking-wide drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
+              Proyecto Tetris
+            </h4>
+            <p className="text-white text-lg mb-4">Un proyecto de Tetris hecho con React y JavaScript</p>
+            <a href="https://tetris-proyecto.vercel.app/" target="_blank" rel="noopener noreferrer"
+                         className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
               Ver Proyecto
             </a>
           </div>
         </div>
       </div>
 
-      <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
-          alt="Proyecto 2" 
-          className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
-        />
-        <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 2</h3>
-
- 
+      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+        style={{ backgroundImage: "url('https://cloud.educaplay.com/r2/img/activities/RELACIONAR_MOSAICO/logoActivity.png?v=1747042562')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
-            <p className="text-white text-lg mb-4">Este proyecto utiliza Bootstrap para diseño responsivo y limpio.</p>
-            <a 
-              href="https://github.com/daw2-cognom25" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white text-lg font-bold py-2 px-6 bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-400 transition-all duration-300"
-            >
+            <h4 className="text-white text-3xl font-bold mb-6 tracking-wide drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
+              Proyecto Memory
+            </h4>
+            <p className="text-white text-lg mb-4">Un juego de memoria hecho con Next.js, ShadCN y JavaScript, incluyendo creacion de api propia y base de datos</p>
+            <a href="https://proyecto-memory-gray.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
               Ver Proyecto
             </a>
           </div>
         </div>
       </div>
 
-  
-      <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/4/49/HTML5_logo_and_wordmark.svg" 
-          alt="Proyecto 3" 
-          className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
-        />
-        <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 3</h3>
-
- 
+      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+        style={{ backgroundImage: "url('https://i1.wp.com/accessaa.co.uk/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-11.42.31.png?fit=681%2C473&ssl=1')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
-            <p className="text-white text-lg mb-4">Aplicación web desarrollada con HTML5, CSS3 y JavaScript.</p>
-            <a 
-              href="https://github.com/daw2-cognom25" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white text-lg font-bold py-2 px-6 bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-400 transition-all duration-300"
-            >
+            <h4 className="text-white text-3xl font-bold mb-6 tracking-wide drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
+              Gestion de Tickets
+            </h4>
+            <p className="text-white text-lg mb-4">Un proyecto hecho con React y JavaScript, en que controlamos inicios de sesiones y gestion de Tickets con comentarios </p>
+            <a href="https://proyecto-gestion-one.vercel.app/" target="_blank" rel="noopener noreferrer"
+                         className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
               Ver Proyecto
             </a>
           </div>
         </div>
       </div>
 
-  
-      <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/4/49/HTML5_logo_and_wordmark.svg" 
-          alt="Proyecto 4" 
-          className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
-        />
-        <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 4</h3>
-
+      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+        style={{ backgroundImage: "url('https://img.freepik.com/vector-premium/recetas-linea-concepto-lista-ingredientes-chef-profesional-plato-tiny-people-lee-libro-recetas-ook-in-hef-ap-estilo-moderno-dibujos-animados-planos-ilustracion-vectorial-sobre-fondo-blanco_501813-1111.jpg')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
-            <p className="text-white text-lg mb-4">Este es un proyecto de backend usando Node.js y Express.</p>
-            <a 
-              href="https://github.com/daw2-cognom25" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white text-lg font-bold py-2 px-6 bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-400 transition-all duration-300"
-            >
+            <h4 className="text-white text-3xl font-bold mb-6 tracking-wide drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
+              Recelist
+            </h4>
+            <p className="text-white text-lg mb-4">Proyecto FullStack de una pagina web sobre recetas</p>
+            <a href="https://proyecto-rece-list.vercel.app/" target="_blank" rel="noopener noreferrer"
+                          className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
               Ver Proyecto
             </a>
           </div>
         </div>
       </div>
 
-
-      <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/4/49/HTML5_logo_and_wordmark.svg" 
-          alt="Proyecto 5" 
-          className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
-        />
-        <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 5</h3>
-
+      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+        style={{ backgroundImage: "url('/img/web.jpg')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
-            <p className="text-white text-lg mb-4">Este es un proyecto donde se manejan bases de datos con MySQL.</p>
-            <a 
-              href="https://github.com/daw2-cognom25" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white text-lg font-bold py-2 px-6 bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-400 transition-all duration-300"
-            >
+            <h4 className="text-white text-3xl font-bold mb-6 tracking-wide drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
+             Master Webs
+            </h4>
+            <p className="text-white text-lg mb-4">Crud completo hecho en php con una base de datos hecha desde cero</p>
+            <a href="https://davesito4.alwaysdata.net/MasterWebs(CRUD)/theme/" target="_blank" rel="noopener noreferrer"
+             className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
               Ver Proyecto
             </a>
           </div>
         </div>
       </div>
 
-
-      <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center overflow-hidden">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/4/49/HTML5_logo_and_wordmark.svg" 
-          alt="Proyecto 6" 
-          className="w-full h-48 object-cover mb-4 group-hover:hidden transition-all duration-300" 
-        />
-        <h3 className="text-3xl font-semibold text-white group-hover:hidden transition-all duration-300">Proyecto 6</h3>
-
-   
+      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+         style={{ backgroundImage: "url('/img/disenyo.png')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
-            <p className="text-white text-lg mb-4">Proyecto en el que integro APIs para obtener y mostrar datos.</p>
-            <a 
-              href="https://github.com/daw2-cognom25" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white text-lg font-bold py-2 px-6 bg-yellow-500 rounded-lg shadow-md hover:bg-yellow-400 transition-all duration-300"
-            >
+            <h4 className="text-white text-3xl font-bold mb-6 tracking-wide drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
+            Patrones de Diseño
+            </h4>
+            <p className="text-white text-lg mb-4">Un proyecto sencillo sobre los patrones de diseño hecho en php, subido con firezilla y alwaysdata</p>
+            <a href="https://davesito4.alwaysdata.net/patrones-de-disenyo-php/index.php" target="_blank" rel="noopener noreferrer"
+             className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300"
+>
               Ver Proyecto
             </a>
           </div>
@@ -318,19 +269,27 @@ export default function Home() {
   </div>
 </section>
 
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+
+
 <div className="w-full border-t border-white opacity-50 my-5"></div>
 
 <footer className="text-white py-16 flex flex-col items-center relative overflow-hidden">
   <div className="flex flex-col items-center gap-8 z-10 relative">
 
-    <h2 className="text-4xl md:text-5xl font-bold text-center">Contáctame</h2>
+    <h2 className=" text-4xl md:text-5xl font-bold text-center">Contáctame</h2>
 
     <div className="flex gap-8">
-      <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+      <a href="https://github.com/DavidHenrique24" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
          className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="GitHub" className="w-10 h-10" />
       </a>
-      <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+      <a href="https://www.linkedin.com/in/david-henrique-9519a3356/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
          className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/ios11/512/FFFFFF/linkedin.png" alt="LinkedIn" className="w-10 h-10" />
       </a>
