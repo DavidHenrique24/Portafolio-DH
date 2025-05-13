@@ -168,7 +168,7 @@ export default function Home() {
     <h2 className="text-8xl font-bold mb-20 text-center text-white animado">Proyectos</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
 
-      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg  text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+      <div className="group relative bg-purple-800 p-8 rounded-lg  text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
         style={{ backgroundImage: "url('https://m.media-amazon.com/images/I/61M3rDwh4qL._h1_.png')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
@@ -184,7 +184,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+      <div className=" group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
         style={{ backgroundImage: "url('https://cloud.educaplay.com/r2/img/activities/RELACIONAR_MOSAICO/logoActivity.png?v=1747042562')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
@@ -200,7 +200,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+      <div className=" group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
         style={{ backgroundImage: "url('https://i1.wp.com/accessaa.co.uk/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-11.42.31.png?fit=681%2C473&ssl=1')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
@@ -216,7 +216,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+      <div className=" group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
         style={{ backgroundImage: "url('https://img.freepik.com/vector-premium/recetas-linea-concepto-lista-ingredientes-chef-profesional-plato-tiny-people-lee-libro-recetas-ook-in-hef-ap-estilo-moderno-dibujos-animados-planos-ilustracion-vectorial-sobre-fondo-blanco_501813-1111.jpg')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
@@ -232,7 +232,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+      <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
         style={{ backgroundImage: "url('/img/web.jpg')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
@@ -248,7 +248,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="animadoArriba group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+      <div className=" group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
          style={{ backgroundImage: "url('/img/disenyo.png')" }}>
         <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="text-center px-6">
