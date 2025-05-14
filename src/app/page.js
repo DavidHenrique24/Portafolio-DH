@@ -33,136 +33,114 @@ export default function Home() {
       observer.disconnect();
     };
   }, []);
-  
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white">
-      
-    
-<div className="fixed top-0 w-full z-50 flex flex-col items-center justify-center h-[10vh] text-center px-2 bg-black-opacity-80 backdrop-blur-sm">
-  <ul className="menuInicio flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10">
-    <li className="text-2xl animado"><a href="#home">Home</a></li>
-    <li className="text-2xl animado"><a href="#acerca">Acerca de mí</a></li>
-    <li className="text-2xl animado"><a href="#exp">Experiencia</a></li>
-    <li className="text-2xl animado"><a href="#proyectos">Proyectos</a></li>
-  </ul>
-</div>
+    <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white px-4 sm:px-6 lg:px-8">
+      <div className="fixed top-0 w-full z-50 flex flex-col items-center justify-center h-[10vh] text-center px-2 bg-black-opacity-80 backdrop-blur-sm">
+        <ul className="menuInicio flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10">
+          <li className="text-2xl animado"><a href="#home">Home</a></li>
+          <li className="text-2xl animado"><a href="#acerca">Acerca de mí</a></li>
+          <li className="text-2xl animado"><a href="#exp">Experiencia</a></li>
+          <li className="text-2xl animado"><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </div>
 
-
-
-
-
- 
       <div id="home" className="flex justify-center items-center h-[100vh] relative">
-        <div className="w-[1000px] h-[1000px] relative flex flex-col items-center justify-center text-center px-4 gap-8">
+        <div className="w-full max-w-[1000px] h-[1000px] relative flex flex-col items-center justify-center text-center px-4 gap-8">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg "
+            className="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg"
             style={{ backgroundImage: "url('/img/cubo.png')" }}
           ></div>
 
           <div className="relative z-10 flex flex-col items-center gap-8">
-            <h1 className="text-9xl font-bold animado ">David Henrique</h1>
+            <h1 className="text-6xl sm:text-9xl font-bold animado">David Henrique</h1>
             <p className="text-2xl max-w-md animadoArriba">Programador de Frontend y Backend, con muchas ganas de seguir aprendiendo.</p>
           </div>
         </div>
       </div>
-      
 
       <div className="separacion"></div>
 
-<section id="acerca" className="flex flex-col items-center justify-center  px-8">
-  <div className="flex flex-col md:flex-row items-center gap-30">
-    
-    
-   <div className="relative w-140 h-140 group">
-  <img 
-    src="/img/PXL_20250513_221219442.jpg"
-    alt="Foto de Perfil" 
-    className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 transition duration-500 group-hover:opacity-0"
-  />
+      <section id="acerca" className="flex flex-col items-center justify-center px-8">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-30">
+          <div className="relative w-32 h-32 md:w-140 md:h-140 group">
+            <img 
+              src="/img/PXL_20250513_221219442.jpg"
+              alt="Foto de Perfil"
+              className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 transition duration-500 group-hover:opacity-0"
+            />
 
-  <img 
-    src="/img/yo.JPG" 
-    alt="Foto Dibujo Hover" 
-    className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
-  />
-</div>
+            <img 
+              src="/img/yo.JPG" 
+              alt="Foto Dibujo Hover"
+              className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
+            />
+          </div>
 
-
-    <div   >
-    <div className="text-center md:text-left">
-      <h2 className="text-7xl font-bold mb-8 animado ">Acerca de mí</h2>
-      <p className="text-2xl max-w-xl">
-        Soy David Henrique, un programador Web con experiencia en Frontend y Backend.
-        Me gusta mucho todo lo relacionado a diseño, me gusta dibujar y jugar videojuegos en mis tiempos libres.
-      </p>
-    </div>
-    </div>
-
-  </div>
-</section>
-
-
-   
-
-    <section id="exp" className="flex flex-col items-center justify-center py-100 px-8 ">
-
-  <div  className="max-w-6xl w-full">
-    <h2 className="text-8xl font-bold mb-20 text-center animado">Experiencia</h2>
-    <div className="flex flex-col md:flex-row justify-center gap-12">
-
-  
-      <div className=" bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoIzquierda"> 
-        <div className="flex flex-col items-center mb-4 ">
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
-            alt="GitHub Logo" 
-            className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
-          />
-          <h3 className="text-3xl font-semibold">GitHub</h3>
+          <div>
+            <div className="text-center md:text-left">
+              <h2 className="text-5xl sm:text-7xl font-bold mb-8 animado">Acerca de mí</h2>
+              <p className="text-xl sm:text-2xl max-w-xl">
+                Soy David Henrique, un programador Web con experiencia en Frontend y Backend. Me gusta mucho todo lo relacionado a diseño, me gusta dibujar y jugar videojuegos en mis tiempos libres.
+              </p>
+            </div>
+          </div>
         </div>
-        <p className="text-xl">
-          Experiencia en el uso de GitHub para el control de versiones y colaboración en proyectos. 
-          También tengo un portafolio de proyectos personales en mi cuenta de GitHub usando ramas.
-        </p>
-      </div>
+      </section>
 
-    
-      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoArriba">
-        <div className="flex flex-col items-center mb-4">
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
-            alt="Frontend Logo" 
-            className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
-          />
-          <h3 className="text-3xl font-semibold">Frontend Y Backend</h3>
+         <div className="separacion"></div>
+
+      <section id="exp" className="flex flex-col items-center justify-center py-16 px-8">
+        <div className="max-w-6xl w-full">
+          <h2 className="text-5xl sm:text-8xl font-bold mb-20 text-center animado">Experiencia</h2>
+          <div className="flex flex-col md:flex-row justify-center gap-8">
+            <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoIzquierda">
+              <div className="flex flex-col items-center mb-4">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
+                  alt="GitHub Logo" 
+                  className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
+                />
+                <h3 className="text-3xl font-semibold">GitHub</h3>
+              </div>
+              <p className="text-xl">
+                Experiencia en el uso de GitHub para el control de versiones y colaboración en proyectos. También tengo un portafolio de proyectos personales en mi cuenta de GitHub usando ramas.
+              </p>
+            </div>
+
+            <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoArriba">
+              <div className="flex flex-col items-center mb-4">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
+                  alt="Frontend Logo" 
+                  className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
+                />
+                <h3 className="text-3xl font-semibold">Frontend Y Backend</h3>
+              </div>
+              <p className="text-xl">
+                Experiencia en el desarrollo de aplicaciones web utilizando tecnologías como React y Next.js. Conocimientos en HTML, CSS, PHP, TypeScript y JavaScript. Desarrollo de aplicaciones web responsivas y optimizadas para diferentes dispositivos.
+              </p>
+            </div>
+
+            <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoDerecha">
+              <div className="flex flex-col items-center mb-4">
+                <img 
+                  src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
+                  alt="Proyectos Personales Logo" 
+                  className="w-20 h-20 mb-4 transition-transform duration-300 transform hover:scale-125" 
+                />
+                <h3 className="text-3xl font-semibold">Proyectos Personales</h3>
+              </div>
+              <p className="text-xl">
+                Desarrollo de proyectos propios publicados en GitHub con tecnologías como PHP, TypeScript y JavaScript. Integración de tecnologías como Git, y despliegues en Vercel y Railway.
+              </p>
+            </div>
+          </div>
         </div>
-        <p className="text-xl">
-          Experiencia en el desarrollo de aplicaciones web utilizando tecnologías como React y Next.js.
-          Conocimientos en HTML, CSS, PHP, TypeScript y JavaScript. 
-          Desarrollo de aplicaciones web responsivas y optimizadas para diferentes dispositivos.
-        </p>
-      </div>
+      </section>
+         <div className="separacion"></div>
 
 
-      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoDerecha"> 
-        <div className="flex flex-col items-center mb-4">
-          <img 
-            src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
-            alt="Proyectos Personales Logo" 
-            className="w-20 h-20 mb-4 transition-transform duration-300 transform hover:scale-125" 
-          />
-          <h3 className="text-3xl font-semibold">Proyectos Personales</h3>
-        </div>
-        <p className="text-xl">
-          Desarrollo de proyectos propios publicados en GitHub con tecnologías como PHP, TypeScript y JavaScript.
-          Integración de tecnologías como Git, y despliegues en Vercel y Railway.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
   <section id="proyectos" className="py-20 px-8">
   <div className="max-w-6xl mx-auto">
@@ -271,7 +249,7 @@ export default function Home() {
 </section>
 
 
-
+<div className="separacion"></div>
 
 <div className="w-full border-t border-white opacity-50 my-5"></div>
 
