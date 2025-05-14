@@ -35,15 +35,25 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white px-4 sm:px-6 lg:px-8">
-      <div className="fixed top-0 w-full z-50 flex flex-col items-center justify-center h-[10vh] text-center px-2 bg-black-opacity-80 backdrop-blur-sm">
-        <ul className="menuInicio flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10">
-          <li className="text-2xl animado"><a href="#home">Home</a></li>
-          <li className="text-2xl animado"><a href="#acerca">Acerca de mí</a></li>
-          <li className="text-2xl animado"><a href="#exp">Experiencia</a></li>
-          <li className="text-2xl animado"><a href="#proyectos">Proyectos</a></li>
-        </ul>
-      </div>
+    <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white px-4 sm:px-8 lg:px-8">
+ <div className="fixed top-0 w-full z-50 flex flex-row items-center justify-center h-[10vh] text-center px-2 bg-black-opacity-80 backdrop-blur-sm">
+  <ul className="menuInicio flex flex-row flex-wrap justify-center items-center gap-8 md:gap-10">
+    <li className=" md:text-2xl transition-transform hover:scale-110 animado">
+      <a href="#home">Home</a>
+    </li>
+    <li className="md:text-2xl transition-transform hover:scale-110 animado">
+      <a href="#acerca">Acerca de mí</a>
+    </li>
+    <li className=" md:text-2xl transition-transform hover:scale-110 animado">
+      <a href="#exp">Experiencia</a>
+    </li>
+    <li className="md:text-2xl transition-transform hover:scale-110 animado">
+      <a href="#proyectos">Proyectos</a>
+    </li>
+  </ul>
+</div>
+
+
 
       <div id="home" className="flex justify-center items-center h-[100vh] relative">
         <div className="w-full max-w-[1000px] h-[1000px] relative flex flex-col items-center justify-center text-center px-4 gap-8">
@@ -144,7 +154,7 @@ export default function Home() {
 
   <section id="proyectos" className="py-20 px-8">
   <div className="max-w-6xl mx-auto">
-    <h2 className="text-8xl font-bold mb-20 text-center text-white animado">Proyectos</h2>
+     <h2 className="text-5xl sm:text-8xl font-bold mb-20 text-center animado">Proyectos</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
 
       <div className="group relative bg-purple-800 p-8 rounded-lg  text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
