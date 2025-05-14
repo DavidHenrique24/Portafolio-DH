@@ -39,14 +39,15 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white">
       
     
-      <div className="fixed top-0 w-full z-50 flex flex-col items-center justify-center h-[10vh] text-center px-2 bg-black-opacity-80 backdrop-blur-sm">
-  <ul className="menuInicio flex justify-center gap-50">
+<div className="fixed top-0 w-full z-50 flex flex-col items-center justify-center h-[10vh] text-center px-2 bg-black-opacity-80 backdrop-blur-sm">
+  <ul className="menuInicio flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10">
     <li className="text-2xl animado"><a href="#home">Home</a></li>
     <li className="text-2xl animado"><a href="#acerca">Acerca de mí</a></li>
     <li className="text-2xl animado"><a href="#exp">Experiencia</a></li>
     <li className="text-2xl animado"><a href="#proyectos">Proyectos</a></li>
   </ul>
 </div>
+
 
 
 
@@ -269,12 +270,7 @@ export default function Home() {
   </div>
 </section>
 
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
+
 
 
 <div className="w-full border-t border-white opacity-50 my-5"></div>
@@ -293,7 +289,7 @@ export default function Home() {
          className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/ios11/512/FFFFFF/linkedin.png" alt="LinkedIn" className="w-10 h-10" />
       </a>
-      <a href="mailto:tuemail@ejemplo.com" aria-label="Email"
+      <a href="Davidhenriquemacias2005@hotmail.com" aria-label="Email"
          className="hover:scale-125 transition-transform duration-300">
         <img src="https://img.icons8.com/win10/512/FFFFFF/gmail.png" alt="Email" className="w-10 h-10" />
       </a>
