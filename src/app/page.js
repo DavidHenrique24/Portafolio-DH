@@ -458,8 +458,7 @@ export default function Home() {
                     Gestion de Tickets
                   </h4>
                   <p className="text-white text-lg mb-4">
-                    Un proyecto hecho con React y JavaScript, en que controlamos
-                    inicios de sesiones y gestion de Tickets con comentarios{" "}
+                    Un proyecto en que controlamos inicios de sesiones y gestion de Tickets con comentarios
                   </p>
                   <div className="flex justify-center gap-4 mb-4">
                     <a
