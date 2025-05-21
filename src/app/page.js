@@ -241,7 +241,7 @@ export default function Home() {
             alt="GitHub"
             className="w-5 h-5"
           />
-          Código
+          Github
         </a>
         <a
           href="https://proyecto-memory-gray.vercel.app/"
@@ -263,17 +263,17 @@ export default function Home() {
         <img
           src="https://cdn-icons-png.flaticon.com/512/919/919828.png"
           alt="JavaScript"
-          className="w-6 h-6"
+          className="w-7 h-7"
         />
         <img
           src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
           alt="Next.js"
-          className="w-6 h-6"
+          className="w-7 h-7"
         />
         <img
           src="https://shadcn.dev/logo.png"
           alt="ShadCN"
-          className="w-6 h-6 rounded-full bg-white"
+          className="w-7 h-7 rounded-full bg-white"
         />
       </div>
     </div>
@@ -291,13 +291,56 @@ export default function Home() {
               Gestion de Tickets
             </h4>
             <p className="text-white text-lg mb-4">Un proyecto hecho con React y JavaScript, en que controlamos inicios de sesiones y gestion de Tickets con comentarios </p>
-            <a href="https://proyecto-gestion-one.vercel.app/" target="_blank" rel="noopener noreferrer"
-                         className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
-              Ver Proyecto
-            </a>
-          </div>
-        </div>
+         <div className="flex justify-center gap-4 mb-4">
+        <a
+          href="https://github.com/tuusuario/proyecto-memory"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            className="w-5 h-5"
+          />
+          Código
+        </a>
+        <a
+          href="https://proyecto-memory-gray.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
+        >
+          <img
+            src="https://static-00.iconduck.com/assets.00/vercel-icon-512x449-zxshp1x0.png"
+            alt="Vercel"
+            className="w-5 h-5"
+          />
+          Github
+        </a>
       </div>
+
+
+      <div className="flex justify-center gap-4">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/919/919828.png"
+          alt="JavaScript"
+          className="w-7 h-7"
+        />
+        <img
+          src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
+          alt="Next.js"
+          className="w-7 h-7"
+        />
+        <img
+          src="https://shadcn.dev/logo.png"
+          alt="ShadCN"
+          className="w-7 h-7 rounded-full bg-white"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 
       <div className=" group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
         style={{ backgroundImage: "url('https://img.freepik.com/vector-premium/recetas-linea-concepto-lista-ingredientes-chef-profesional-plato-tiny-people-lee-libro-recetas-ook-in-hef-ap-estilo-moderno-dibujos-animados-planos-ilustracion-vectorial-sobre-fondo-blanco_501813-1111.jpg')" }}>
@@ -307,13 +350,60 @@ export default function Home() {
               Recelist
             </h4>
             <p className="text-white text-lg mb-4">Proyecto FullStack de una pagina web sobre recetas</p>
-            <a href="https://proyecto-rece-list.vercel.app/" target="_blank" rel="noopener noreferrer"
-                          className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
-              Ver Proyecto
-            </a>
-          </div>
-        </div>
+              <div className="flex justify-center gap-4 mb-4">
+        <a
+          href="https://github.com/tuusuario/proyecto-memory"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            className="w-5 h-5"
+          />
+          Código
+        </a>
+        <a
+          href="https://proyecto-memory-gray.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
+        >
+          <img
+            src="https://static-00.iconduck.com/assets.00/vercel-icon-512x449-zxshp1x0.png"
+            alt="Vercel"
+            className="w-5 h-5"
+          />
+          Github
+        </a>
       </div>
+
+
+      <div className="flex justify-center gap-4">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/919/919828.png"
+          alt="JavaScript"
+          className="w-7 h-7"
+        />
+        <img
+          src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
+          alt="Next.js"
+          className="w-7 h-7"
+        />
+        <img
+          src="https://shadcn.dev/logo.png"
+          alt="ShadCN"
+          className="w-7 h-7 rounded-full bg-white"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
       <div className="group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
         style={{ backgroundImage: "url('/img/web.jpg')" }}>
@@ -323,13 +413,58 @@ export default function Home() {
              Master Webs
             </h4>
             <p className="text-white text-lg mb-4">Crud completo hecho en php con una base de datos hecha desde cero</p>
-            <a href="https://davesito4.alwaysdata.net/MasterWebs(CRUD)/theme/" target="_blank" rel="noopener noreferrer"
-             className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
-              Ver Proyecto
-            </a>
-          </div>
-        </div>
+               <div className="flex justify-center gap-4 mb-4">
+        <a
+          href="https://github.com/tuusuario/proyecto-memory"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            className="w-5 h-5"
+          />
+          Código
+        </a>
+        <a
+          href="https://proyecto-memory-gray.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
+        >
+          <img
+            src="https://static-00.iconduck.com/assets.00/vercel-icon-512x449-zxshp1x0.png"
+            alt="Vercel"
+            className="w-5 h-5"
+          />
+          Github
+        </a>
       </div>
+
+
+      <div className="flex justify-center gap-4">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/919/919828.png"
+          alt="JavaScript"
+          className="w-7 h-7"
+        />
+        <img
+          src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
+          alt="Next.js"
+          className="w-7 h-7"
+        />
+        <img
+          src="https://shadcn.dev/logo.png"
+          alt="ShadCN"
+          className="w-7 h-7 rounded-full bg-white"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
       <div className=" group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
          style={{ backgroundImage: "url('/img/disenyo.png')" }}>
@@ -339,14 +474,56 @@ export default function Home() {
             Patrones de Diseño
             </h4>
             <p className="text-white text-lg mb-4">Un proyecto sencillo sobre los patrones de diseño hecho en php, subido con firezilla y alwaysdata</p>
-            <a href="https://davesito4.alwaysdata.net/patrones-de-disenyo-php/index.php" target="_blank" rel="noopener noreferrer"
-             className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300"
->
-              Ver Proyecto
-            </a>
-          </div>
-        </div>
+              <div className="flex justify-center gap-4 mb-4">
+        <a
+          href="https://github.com/tuusuario/proyecto-memory"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            className="w-5 h-5"
+          />
+          Código
+        </a>
+        <a
+          href="https://proyecto-memory-gray.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
+        >
+          <img
+            src="https://static-00.iconduck.com/assets.00/vercel-icon-512x449-zxshp1x0.png"
+            alt="Vercel"
+            className="w-5 h-5"
+          />
+          Github
+        </a>
       </div>
+
+
+      <div className="flex justify-center gap-4">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/919/919828.png"
+          alt="JavaScript"
+          className="w-7 h-7"
+        />
+        <img
+          src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
+          alt="Next.js"
+          className="w-7 h-7"
+        />
+        <img
+          src="https://shadcn.dev/logo.png"
+          alt="ShadCN"
+          className="w-7 h-7 rounded-full bg-white"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 
     </div>
   </div>
