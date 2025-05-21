@@ -36,6 +36,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-purple-800 to-black text-white px-4 sm:px-8 lg:px-8">
+
  <div className="fixed top-0 w-full z-50 flex flex-row items-center justify-center h-[10vh] text-center px-2 bg-black-opacity-80 backdrop-blur-sm">
   <ul className="menuInicio flex flex-row flex-wrap justify-center items-center gap-8 md:gap-10">
     <li className=" md:text-2xl transition-transform hover:scale-110 animado">
@@ -100,54 +101,91 @@ export default function Home() {
 
          <div className="separacion"></div>
 
-      <section id="exp" className="flex flex-col items-center justify-center py-16 px-8">
-        <div className="max-w-6xl w-full">
-          <h2 className="text-5xl sm:text-8xl font-bold mb-20 text-center animado">Experiencia</h2>
-          <div className="flex flex-col md:flex-row justify-center gap-8">
-            <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoIzquierda">
-              <div className="flex flex-col items-center mb-4">
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
-                  alt="GitHub Logo" 
-                  className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
-                />
-                <h3 className="text-3xl font-semibold">GitHub</h3>
-              </div>
-              <p className="text-xl">
-                Experiencia en el uso de GitHub para el control de versiones y colaboración en proyectos. También tengo un portafolio de proyectos personales en mi cuenta de GitHub usando ramas.
-              </p>
-            </div>
+ <section id="exp" className="flex flex-col items-center justify-center py-16 px-8">
+  <div className="max-w-6xl w-full">
+    <h2 className="text-5xl sm:text-8xl font-bold mb-20 text-center animado">Experiencia</h2>
+    <div className="flex flex-col md:flex-row justify-center gap-8">
 
-            <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoArriba">
-              <div className="flex flex-col items-center mb-4">
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
-                  alt="Frontend Logo" 
-                  className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
-                />
-                <h3 className="text-3xl font-semibold">Frontend Y Backend</h3>
-              </div>
-              <p className="text-xl">
-                Experiencia en el desarrollo de aplicaciones web utilizando tecnologías como React y Next.js. Conocimientos en HTML, CSS, PHP, TypeScript y JavaScript. Desarrollo de aplicaciones web responsivas y optimizadas para diferentes dispositivos.
-              </p>
-            </div>
-
-            <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoDerecha">
-              <div className="flex flex-col items-center mb-4">
-                <img 
-                  src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
-                  alt="Proyectos Personales Logo" 
-                  className="w-20 h-20 mb-4 transition-transform duration-300 transform hover:scale-125" 
-                />
-                <h3 className="text-3xl font-semibold">Proyectos Personales</h3>
-              </div>
-              <p className="text-xl">
-                Desarrollo de proyectos propios publicados en GitHub con tecnologías como PHP, TypeScript y JavaScript. Integración de tecnologías como Git, y despliegues en Vercel y Railway.
-              </p>
-            </div>
-          </div>
+  
+      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoIzquierda">
+        <div className="flex flex-col items-center mb-4">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
+            alt="GitHub Logo" 
+            className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125" 
+          />
+          <h3 className="text-3xl font-semibold">Control de versiones</h3>
         </div>
-      </section>
+        <p className="text-xl mb-6">
+          Uso avanzado de Git y GitHub para control de versiones, trabajo colaborativo y flujos de desarrollo. Experiencia con ramas, pull requests y despliegue de contenedores con Docker.
+        </p>
+        <div className="flex justify-center gap-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Git" className="w-8 h-8" />
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="GitHub" className="w-8 h-8" />
+          <img src="https://josecg.com/assets/img/post/docker/docker_logo.jpg" alt="Docker" className="w-8 h-8" />
+        </div>
+      </div>
+
+
+     <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoArriba">
+  <div className="flex flex-col items-center mb-4">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+      alt="Bootstrap Logo"
+      className="w-16 h-16 mb-4 transition-transform duration-300 transform hover:scale-125"
+    />
+    <h3 className="text-3xl font-semibold text-white">Frontend</h3>
+  </div>
+
+  <p className="text-xl mb-6 text-white">
+    Desarrollo de interfaces modernas y responsivas con React, Next.js, HTML, CSS, Bootstrap y Tailwind CSS.
+    Enfocado en experiencia de usuario, diseño accesible y despliegue eficiente en Vercel o Railway.
+  </p>
+
+  <div className="flex flex-wrap justify-center gap-4">
+    <img title="React" src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" className="w-8 h-8" />
+    <img title="HTML5" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML5" className="w-8 h-8" />
+    <img title="CSS3" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" className="w-8 h-8" />
+    <img title="Bootstrap" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap" className="w-8 h-8" />
+    <img title="Tailwind CSS" src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png" alt="Tailwind CSS" className="w-8 h-8" />
+    <img title="Vercel" src="https://assets.vercel.com/image/upload/front/favicon/vercel/favicon.ico" alt="Vercel" className="w-8 h-8" />
+    <img title="Next.js" src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" alt="Next.js" className="w-8 h-8 rounded-full bg-black p-1" />
+    <img title="ShadCN" src="https://avatars.githubusercontent.com/u/139895814?v=4" alt="ShadCN" className="w-8 h-8 rounded-full bg-black p-1" />
+    <img title="Railway" src="https://railway.app/favicon.ico" alt="Railway" className="w-8 h-8" />
+  </div>
+</div>
+
+
+     
+      <div className="bg-purple-800 p-8 rounded-lg shadow-lg flex-1 text-center hover:scale-105 transform transition-all duration-300 animadoDerecha">
+        <div className="flex flex-col items-center mb-4">
+          <img 
+            src="https://images.icon-icons.com/3261/PNG/512/reactjs_logo_icon_206693.png" 
+            alt="Backend Logo" 
+            className="w-20 h-20 mb-4 transition-transform duration-300 transform hover:scale-125" 
+          />
+          <h3 className="text-3xl font-semibold">Backend</h3>
+        </div>
+        <p className="text-xl mb-6">
+          Programación backend con PHP, Laravel, JavaScript y TypeScript. Experiencia con bases de datos como MySQL, Supabase y Apis. Despliegue eficiente en Vercel y github pages.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP" className="w-8 h-8" />
+          <img src="https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png" alt="Laravel" className="w-8 h-8" />
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" className="w-8 h-8" />
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="TypeScript" className="w-8 h-8" />
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL" className="w-8 h-8" />
+          <img src="https://yt3.googleusercontent.com/KVjptxDSWT7rjVfGax2TgTNVAYgplgo1z_fwaV3MFjPpcmNVZC0TIgQV030BPJ0ybCP3_Fz-2w=s900-c-k-c0x00ffffff-no-rj" alt="Supabase" className="w-8 h-8" />
+          <img src=" https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/collections/github-pages-examples/github-pages-examples.png" alt="githuPages" className="w-8 h-8" />
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
          <div className="separacion"></div>
 
 
@@ -173,21 +211,77 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
-        style={{ backgroundImage: "url('https://cloud.educaplay.com/r2/img/activities/RELACIONAR_MOSAICO/logoActivity.png?v=1747042562')" }}>
-        <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-          <div className="text-center px-6">
-            <h4 className="text-white text-3xl font-bold mb-6 tracking-wide drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
-              Proyecto Memory
-            </h4>
-            <p className="text-white text-lg mb-4">Un juego de memoria hecho con Next.js, ShadCN y JavaScript, incluyendo creacion de api propia y base de datos</p>
-            <a href="https://proyecto-memory-gray.vercel.app/" target="_blank" rel="noopener noreferrer"
-                        className="text-white text-lg font-bold py-2 px-6 bg-teal-600 rounded-lg shadow-md hover:bg-teal-400 transition-all duration-300">
-              Ver Proyecto
-            </a>
-          </div>
-        </div>
+     <div
+  className="group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
+  style={{
+    backgroundImage:
+      "url('https://cloud.educaplay.com/r2/img/activities/RELACIONAR_MOSAICO/logoActivity.png?v=1747042562')",
+  }}
+>
+
+  <div className="absolute inset-0 bg-purple-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+    <div className="text-center px-6">
+      <h4 className="text-white text-3xl font-bold mb-6 tracking-wide drop-shadow-lg group-hover:scale-105 transition-transform duration-500">
+        Proyecto Memory
+      </h4>
+      <p className="text-white text-lg mb-6">
+        Un juego de memoria hecho con Next.js, ShadCN y JavaScript, incluyendo creación de API propia y base de datos.
+      </p>
+
+
+      <div className="flex justify-center gap-4 mb-4">
+        <a
+          href="https://github.com/tuusuario/proyecto-memory"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            className="w-5 h-5"
+          />
+          Código
+        </a>
+        <a
+          href="https://proyecto-memory-gray.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
+        >
+          <img
+            src="https://static-00.iconduck.com/assets.00/vercel-icon-512x449-zxshp1x0.png"
+            alt="Vercel"
+            className="w-5 h-5"
+          />
+          Ver web
+        </a>
       </div>
+
+
+      <div className="flex justify-center gap-4">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/919/919828.png"
+          alt="JavaScript"
+          className="w-6 h-6"
+        />
+        <img
+          src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
+          alt="Next.js"
+          className="w-6 h-6"
+        />
+        <img
+          src="https://shadcn.dev/logo.png"
+          alt="ShadCN"
+          className="w-6 h-6 rounded-full bg-white"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
       <div className=" group relative bg-purple-800 p-8 rounded-lg shadow-lg text-center overflow-hidden bg-cover bg-center flex flex-col justify-end min-h-[300px]"
         style={{ backgroundImage: "url('https://i1.wp.com/accessaa.co.uk/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-11.42.31.png?fit=681%2C473&ssl=1')" }}>
