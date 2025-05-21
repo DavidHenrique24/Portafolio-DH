@@ -375,8 +375,8 @@ export default function Home() {
                     Proyecto Memory
                   </h4>
                   <p className="text-white text-lg mb-6">
-                    Un juego de memoria hecho con Next.js, ShadCN y JavaScript,
-                    incluyendo creación de API propia y base de datos.
+                    Un juego de memoria hecho con Next.js, ShadCN y JavaScript
+                    con api propia
                   </p>
 
                   <div className="flex justify-center gap-4 mb-4">
