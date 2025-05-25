@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     const elementos = document.querySelectorAll(
-      ".animado, .animadoArriba, .animadoIzquierda, .animadoDerecha"
+      ".animado, .animadoArriba, .animadoIzquierda, .animadoDerecha, .fadeOnly"
     );
 
     const opciones = {
@@ -59,9 +59,9 @@ export default function Home() {
         id="home"
         className="flex justify-center items-center h-[100vh] relative"
       >
-        <div className="w-full max-w-[1000px] h-[1000px] relative flex flex-col items-center justify-center text-center px-4 gap-8">
+        <div className="w-full max-w-[1000px] h-[1000px] relative flex flex-col items-center justify-center text-center px-4 gap-8 ">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg"
+            className="absolute inset-0 bg-cover bg-center opacity-30 rounded-lg fadeOnly "
             style={{ backgroundImage: "url('/img/cubo.png')" }}
           ></div>
 
@@ -83,8 +83,8 @@ export default function Home() {
         id="acerca"
         className="flex flex-col items-center justify-center px-8"
       >
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-30">
-          <div className="relative w-32 h-32 md:w-140 md:h-140 group">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-30 ">
+          <div className="relative w-32 h-32 md:w-140 md:h-140 group animadoIzquierda">
             <img
               src="/img/PXL_20250513_221219442.jpg"
               alt="Foto de Perfil"
@@ -92,15 +92,15 @@ export default function Home() {
             />
 
             <img
-              src="/img/yo.JPG"
+              src="/img/yo.png"
               alt="Foto Dibujo Hover"
               className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-500 absolute top-0 left-0 opacity-0 transition duration-500 group-hover:opacity-100"
             />
           </div>
 
           <div>
-            <div className="text-center md:text-left">
-              <h2 className="text-5xl sm:text-7xl font-bold mb-8 animado">
+            <div className="text-center md:text-left animadoDerecha">
+              <h2 className="text-5xl sm:text-7xl font-bold mb-8 ">
                 Acerca de mí
               </h2>
               <p className="text-xl sm:text-2xl max-w-xl">
@@ -290,7 +290,8 @@ export default function Home() {
 
       <div className="separacion"></div>
 
-      <section id="proyectos" className="py-20 px-8">
+      <section id="proyectos" className="py-20 px-8 scroll-mt-[10vh]">
+
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl sm:text-8xl font-bold mb-20 text-center animado">
             Proyectos
@@ -313,7 +314,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-center gap-4 mb-4">
                     <a
-                      href="https://github.com/tuusuario/proyecto-memory"
+                      href="https://github.com/DavidHenrique24/TetrisProyecto"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
@@ -326,7 +327,7 @@ export default function Home() {
                       Github
                     </a>
                     <a
-                      href="https://proyecto-memory-gray.vercel.app/"
+                      href="https://tetris-proyecto.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
@@ -381,7 +382,7 @@ export default function Home() {
 
                   <div className="flex justify-center gap-4 mb-4">
                     <a
-                      href="https://github.com/tuusuario/proyecto-memory"
+                      href="https://github.com/DavidHenrique24/proyecto-memory"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
@@ -462,7 +463,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-center gap-4 mb-4">
                     <a
-                      href="https://github.com/tuusuario/proyecto-memory"
+                      href="https://github.com/DavidHenrique24/Proyecto-Gestion"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
@@ -475,7 +476,7 @@ export default function Home() {
                       Github
                     </a>
                     <a
-                      href="https://proyecto-memory-gray.vercel.app/"
+                      href="https://proyecto-gestion-one.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
@@ -535,7 +536,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-center gap-4 mb-4">
                     <a
-                      href="https://github.com/tuusuario/proyecto-memory"
+                      href="https://github.com/DavidHenrique24/Proyecto-ReceList"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
@@ -548,7 +549,7 @@ export default function Home() {
                       Github
                     </a>
                     <a
-                      href="https://proyecto-memory-gray.vercel.app/"
+                      href="https://proyecto-rece-list.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
@@ -605,7 +606,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-center gap-4 mb-4">
                     <a
-                      href="https://github.com/tuusuario/proyecto-memory"
+                      href="https://github.com/DavidHenrique24/2425-M7-DavidHenrique/tree/UF-3"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
@@ -618,7 +619,7 @@ export default function Home() {
                       Github
                     </a>
                     <a
-                      href="https://proyecto-memory-gray.vercel.app/"
+                      href="https://davesito4.alwaysdata.net/MasterWebs(CRUD)/theme/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
@@ -669,7 +670,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-center gap-4 mb-4">
                     <a
-                      href="https://github.com/tuusuario/proyecto-memory"
+                      href="https://github.com/DavidHenrique24/Patrones-de-Disenyo-DH"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-gray-800 rounded-md shadow-md hover:bg-gray-700 transition-all duration-300"
@@ -682,7 +683,7 @@ export default function Home() {
                       Github
                     </a>
                     <a
-                      href="https://proyecto-memory-gray.vercel.app/"
+                      href="https://davesito4.alwaysdata.net/patrones-de-disenyo-php/index.php"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
