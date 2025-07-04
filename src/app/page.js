@@ -201,7 +201,7 @@ export default function Home() {
 
                 <img
                   title="Tailwind CSS"
-                  src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png"
+                  src="https://code.dlang.org/packages/tailwind-d/logo?s=650228a573eaa51f8ceded68"
                   alt="Tailwind CSS"
                   className="w-8 h-8"
                 />
@@ -253,7 +253,7 @@ export default function Home() {
                   className="w-8 h-8"
                 />
                 <img
-                  src="https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
                   alt="Laravel"
                   className="w-8 h-8"
                 />
@@ -343,7 +343,7 @@ export default function Home() {
 
                   <div className="flex justify-center gap-4">
                     <img
-                      src="https://static-00.iconduck.com/assets.00/js-icon-2048x2048-kbwt89q3.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
                       alt="JavaScript"
                       className="w-8 h-8 "
                     />
@@ -395,7 +395,7 @@ export default function Home() {
                       Github
                     </a>
                     <a
-                      href="https://proyecto-memory-gray.vercel.app/"
+                      href="https://proyecto-memory-davidhenrqiue.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-white font-semibold py-2 px-4 bg-teal-600 rounded-md shadow-md hover:bg-teal-500 transition-all duration-300"
@@ -411,7 +411,7 @@ export default function Home() {
 
                   <div className="flex justify-center gap-4">
                     <img
-                      src="https://static-00.iconduck.com/assets.00/js-icon-2048x2048-kbwt89q3.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
                       alt="JavaScript"
                       className="w-8 h-8 "
                     />
@@ -426,7 +426,7 @@ export default function Home() {
                       className="w-8 h-8 rounded-full bg-white"
                     />
                     <img
-                      src="https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
                       alt="Laravel"
                       className="w-8 h-8 "
                     />
@@ -492,7 +492,7 @@ export default function Home() {
 
                   <div className="flex justify-center gap-4">
                     <img
-                      src="https://static-00.iconduck.com/assets.00/js-icon-2048x2048-kbwt89q3.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
                       alt="JavaScript"
                       className="w-8 h-8"
                     />
@@ -576,7 +576,7 @@ export default function Home() {
                     />
 
                     <img
-                      src="https://static-00.iconduck.com/assets.00/js-icon-2048x2048-kbwt89q3.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
                       alt="JavaScript"
                       className="w-8 h-8"
                     />
@@ -721,61 +721,111 @@ export default function Home() {
 
       <div className="w-full border-t border-white opacity-50 my-5"></div>
 
-      <footer className="text-white py-16 flex flex-col items-center relative overflow-hidden">
-        <div className="flex flex-col items-center gap-8 z-10 relative">
-          <h2 className=" text-4xl md:text-5xl font-bold text-center">
-            Contáctame
-          </h2>
+     <footer className="text-white py-16 flex flex-col items-center relative overflow-hidden w-full">
+  <div className="flex flex-col items-center gap-10 z-10 relative w-full">
+    <h2 className="text-4xl md:text-5xl font-bold text-center">Contáctame</h2>
 
-          <div className="flex gap-8">
-            <a
-              href="https://github.com/DavidHenrique24"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              className="hover:scale-125 transition-transform duration-300"
-            >
-              <img
-                src="https://img.icons8.com/ios11/512/FFFFFF/github.png"
-                alt="GitHub"
-                className="w-10 h-10"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/david-henrique-9519a3356/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="hover:scale-125 transition-transform duration-300"
-            >
-              <img
-                src="https://img.icons8.com/ios11/512/FFFFFF/linkedin.png"
-                alt="LinkedIn"
-                className="w-10 h-10"
-              />
-            </a>
-            <a
-              href="Davidhenriquemacias2005@hotmail.com"
-              aria-label="Email"
-              className="hover:scale-125 transition-transform duration-300"
-            >
-              <img
-                src="https://img.icons8.com/win10/512/FFFFFF/gmail.png"
-                alt="Email"
-                className="w-10 h-10"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="mt-8 text-center z-10 relative">
-          <p className="text-lg">Espero vernos pronto!</p>
-        </div>
+    <form
+      action="mailto:Davidhenriquemacias2005@hotmail.com"
+      method="POST"
+      encType="text/plain"
+      className="flex flex-col gap-6 w-11/12 max-w-lg bg-white/20 backdrop-blur-md p-8 rounded-3xl shadow-2xl border border-white/30 mt-10 transition-all duration-300 hover:shadow-purple-500/30"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <label className="flex flex-col gap-2">
+          <span className="text-white font-semibold">Nombre</span>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+            className="border border-purple-400 bg-white/60 rounded-xl px-4 py-2 text-black focus:outline-none focus:ring-4 focus:ring-purple-400 transition-all"
+          />
+        </label>
+
+        <label className="flex flex-col gap-2">
+          <span className="text-white font-semibold">Correo electrónico</span>
+          <input
+            type="email"
+            name="correo"
+            placeholder="tu@email.com"
+            required
+            className="border border-purple-400 bg-white/60 rounded-xl px-4 py-2 text-black focus:outline-none focus:ring-4 focus:ring-purple-400 transition-all"
+          />
+        </label>
+      </div>
+
+      <label className="flex flex-col gap-2">
+        <span className="text-white font-semibold">Mensaje</span>
+        <textarea
+          name="mensaje"
+          rows="5"
+          placeholder="Escribe tu mensaje aquí..."
+          required
+          className="border border-purple-400 bg-white/60 rounded-xl px-4 py-2 text-black focus:outline-none focus:ring-4 focus:ring-purple-400 transition-all resize-none"
+        ></textarea>
+      </label>
+
+      <button
+        type="submit"
+        className="text-white bg-purple-500 rounded-xl px-6 py-3 font-bold shadow-lg hover:bg-purple-600 hover:scale-105 hover:shadow-purple-400/40 transition-all duration-300"
+      >
+        Enviar
+      </button>
+    </form>
+
+    <div className="flex gap-8 mt-10">
+      <a
+        href="https://github.com/DavidHenrique24"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+        className="hover:scale-125 transition-transform duration-300"
+      >
         <img
-          src="/img/Y8HD.gif"
+          src="https://img.icons8.com/ios11/512/FFFFFF/github.png"
           alt="GitHub"
-          className="w-30 h-20 opacity-5 mt-3"
+          className="w-10 h-10"
         />
-      </footer>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/david-henrique-9519a3356/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        className="hover:scale-125 transition-transform duration-300"
+      >
+        <img
+          src="https://img.icons8.com/ios11/512/FFFFFF/linkedin.png"
+          alt="LinkedIn"
+          className="w-10 h-10"
+        />
+      </a>
+      <a
+        href="mailto:Davidhenriquemacias2005@hotmail.com"
+        aria-label="Email"
+        className="hover:scale-125 transition-transform duration-300"
+      >
+        <img
+          src="https://img.icons8.com/win10/512/FFFFFF/gmail.png"
+          alt="Email"
+          className="w-10 h-10"
+        />
+      </a>
+    </div>
+  </div>
+
+  <div className="mt-8 text-center z-10 relative">
+    <p className="text-lg">Espero vernos pronto!</p>
+  </div>
+
+  <img
+    src="/img/Y8HD.gif"
+    alt="Decoración"
+    className="w-30 h-20 opacity-5 mt-3"
+  />
+</footer>
+
     </main>
   );
 }
